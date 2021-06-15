@@ -86,11 +86,3 @@ body{
 	position: absolute;
 
 }
-.name{
-	padding: 10px;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 100px;
-	margin-left: 100px;
-	margin-top: 10px;
-	display: block;
-}
