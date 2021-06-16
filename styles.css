@@ -84,5 +84,6 @@ body{
 	border-color: #ffb6c1;
 	text-align: left;
 	position: absolute;
+	overflow: auto;
 
 }
