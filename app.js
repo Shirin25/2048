@@ -2,9 +2,11 @@ document.addEventListener('DOMContentLoaded',() =>{
 	const gridDisplay= document.querySelector('.grid')
 	const scoreDisplay= document.getElementById('score')
 	const resultDisplay= document.getElementById('result')
+	const bestscoreDisplay= document.getElementById('bestscore')
 	const width=4;
 	let squares=[]
 	let score=0
+	let bestscore=0
 	let colors=new Map()
 	colors[0]="#e0ffff"
 	colors[2]="#D2AADA"
@@ -182,7 +184,10 @@ document.addEventListener('DOMContentLoaded',() =>{
 				squares[i].innerHTML=combinedTotal
 				squares[i+1].innerHTML=0;
 				score+=combinedTotal
+				if(score>=bestscore)
+					bestscore=score
 				scoreDisplay.innerHTML=score
+				bestscoreDisplay.innerHTML=bestscore
 				
 			}
 		}
@@ -200,7 +205,10 @@ document.addEventListener('DOMContentLoaded',() =>{
 				squares[i].innerHTML=combinedTotal
 				squares[i+width].innerHTML=0;
 				score+=combinedTotal
+				if (score>=bestscore)
+					bestscore=score
 				scoreDisplay.innerHTML=score
+				bestscoreDisplay.innerHTML=bestscore
 				
 			}
 		}
